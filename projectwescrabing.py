@@ -79,10 +79,6 @@ def main():
     st.sidebar.image("jumiaimage.png")
     c1 = st.sidebar.selectbox("select an option..", ["EDA","Insights"])
     df = scrape_jumia()
-    try:
-        df = scrape_jumia()
-    except:
-        print("")
     if c1 == "EDA":
         c2 = st.sidebar.radio("select chart", ["Bar chart" , "Scatter chart"])
         if c2 == "Scatter chart":
