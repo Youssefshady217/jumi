@@ -78,6 +78,7 @@ def main():
     st.sidebar.markdown("Created by [Youssef Shady](https://www.facebook.com/share/18MJH5gqat/?mibextid=LQQJ4d)")
     st.sidebar.image("jumiaimage.png")
     c1 = st.sidebar.selectbox("select an option..", ["EDA","Insights"])
+    df = scrape_jumia()
     try:
         df = scrape_jumia()
     except:
